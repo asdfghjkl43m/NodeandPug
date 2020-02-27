@@ -1,0 +1,22 @@
+html   
+    title My index Page
+    link(rel="stylesheet", href="/css/mystyle.css",type="text/css")
+    script(src="/scripts/myscript.js")
+    body
+        div
+            h1 Ocean's Eleven
+            ul
+                li Comedy
+                li Thriller
+            p.
+                Danny Ocean and his eleven accomplices plan to rob
+                three Las Vegas casinos simultaneously.
+            img(src="/images/node_jade.jpg", widlth="150px",height="200px" )
+            - var x = 5;
+    
+             ul
+                - for (var i=1; i<=x; i++) {
+                li Hello #{i}
+                - }
+              p.redText This is a red line 
+             input(type="button"onclick="Hi()", value="Click here")
