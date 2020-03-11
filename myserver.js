@@ -2,7 +2,7 @@ var express=require('express');
 var app=express();
 
 app.set('view engine','jade');
-var port = process.env.PORT || 7000;
+var port = process.env.PORT || 11000;
 
 var publicDir = require('path').join(__dirname,'/public');
 app.use(express.static(publicDir));
@@ -17,8 +17,14 @@ app.get("/",(req,res)=>{
 app.get('/form',(req,res)=>{
     res.render('form');
 })
-app.get('/form',(req,res)=>{
-    res.render('form');
+app.get('/yui',(req,res)=>{
+    res.render('yui');
+})
+app.get('/mugi',(req,res)=>{
+    res.render('mugi');
+})
+app.get('/violet',(req,res)=>{
+    res.render('violet');
 })
 
 app.post('/saveForm',(req,res)=>{
