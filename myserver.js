@@ -2,7 +2,7 @@ var express=require('express');
 var app=express();
 
 app.set('view engine','jade');
-var port = process.env.PORT || 4000;
+var port = process.env.PORT || 6000;
 
 var publicDir = require('path').join(__dirname,'/public');
 app.use(express.static(publicDir));
@@ -19,6 +19,9 @@ app.get('/saveform',(req,res)=>{
     res.render('form');
 })
 app.get('/form',(req,res)=>{
+    res.render('form');
+})
+app.get('/yui',(req,res)=>{
     res.render('form');
 })
 

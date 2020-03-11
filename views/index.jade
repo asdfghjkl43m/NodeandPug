@@ -3,8 +3,12 @@ html
     link(rel="stylesheet", href="/css/mystyle.css",type="text/css")
     script(src="/scripts/myscript.js")
     body 
-    
         div
+            <div align="right">
+            <form action="/form" method="get" id="form">
+            <button type="submit" form="form" value="Submit">LOGIN NOW</button>
+            </form>
+            </div>  
             h1 Kyoani Fan Merch
             ul
                 li  Merch
@@ -13,18 +17,11 @@ html
                 Kyoani fan merch is a fan_made website selling high-quality merch related to all
                 of Kyoani productions. All money earned  will be donated to relieve their studio's tragic fire in Kyoto
                 
-            <a href="http://localhost:5000/form">
+            <a href="http://localhost:5000/yui">
             <img src="/images/yui.jpg" width="150" height="200">
+            &nbsp;
             <a href="https://youtube.com">
             img(src="/images/node_jade.jpg", widlth="150px",height="200px" )
+            &nbsp;
             <a href="https://youtube.com">
             img(src="/images/duo.jpg", widlth="150px",height="200px" )
-
-            - var x = 5;
-    
-             ul
-                - for (var i=1; i<=x; i ++) {
-                li Hello #{i}
-                - }
-              p.blueText This is a blue line 
-             <button onclick="Hi()">Click   </button>
