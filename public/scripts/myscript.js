@@ -1,3 +1,3 @@
 function Hi(){
-    alert('hi hey !!!')
+    alert('well hello theere !!!')
 }
