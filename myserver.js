@@ -38,6 +38,9 @@ app.get('/mugibuy',(req,res)=>{
 app.get('/registerform',(req,res)=>{
     res.render('registerform');
 })
+app.get('/testing',(req,res)=>{
+    res.render('testing');
+})
 app.post('/yuiBack',(req,res)=>{
     res.render('yui')
 })
